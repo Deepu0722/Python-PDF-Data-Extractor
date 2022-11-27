@@ -1,0 +1,29 @@
+class Vehicle():
+ def __init__(self, vehicletype):
+    self.vehicletype = vehicletype
+
+class Car(Vehicle):
+ def __init__(self, enginetype):
+    super().__init__("Car")
+    self.enginetype = enginetype
+    self.wheels = 4
+
+class Motorcycle(Vehicle):
+ def __init__(self, enginetype, sidecar):
+    super().__init__("Motorcycle")
+    self.enginetype = enginetype
+    self.sidecar = False
+    if (self.sideCar):
+        self.wheels = 3
+    else :
+        self.wheels = 2
+
+car1 = Car("gas")
+car2 = Car("electricity")
+motor1= Motorcycle("gas", True)
+
+
+
+
+
+
